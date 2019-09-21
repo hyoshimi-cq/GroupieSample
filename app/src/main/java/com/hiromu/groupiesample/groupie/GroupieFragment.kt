@@ -10,7 +10,7 @@ import com.hiromu.groupiesample.Fruit
 import com.hiromu.groupiesample.R
 import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.kotlinandroidextensions.ViewHolder
-import kotlinx.android.synthetic.main.fragment_groupie.view.recyclerView
+import kotlinx.android.synthetic.main.fragment_list.view.recyclerView
 
 class GroupieFragment : Fragment() {
 
@@ -19,7 +19,7 @@ class GroupieFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_groupie, container, false)
+        return inflater.inflate(R.layout.fragment_list, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

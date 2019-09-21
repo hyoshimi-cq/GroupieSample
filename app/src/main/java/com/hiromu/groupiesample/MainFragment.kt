@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.hiromu.groupiesample.binding.GroupieBindingFragment
 import com.hiromu.groupiesample.groupie.GroupieFragment
 import com.hiromu.groupiesample.standard.StandardFragment
 import kotlinx.android.synthetic.main.fragment_main.view.*
@@ -26,6 +27,10 @@ class MainFragment : Fragment() {
 
         view.groupieButton.setOnClickListener {
             openFragment(GroupieFragment())
+        }
+
+        view.groupieBindingButton.setOnClickListener {
+            openFragment(GroupieBindingFragment())
         }
     }
 
