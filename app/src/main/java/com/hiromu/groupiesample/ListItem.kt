@@ -1,4 +1,4 @@
-package com.hiring.groupiesample
+package com.hiromu.groupiesample
 
 data class ListItem(
     val title: String,

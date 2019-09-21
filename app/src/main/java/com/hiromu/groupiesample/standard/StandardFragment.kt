@@ -1,4 +1,4 @@
-package com.hiring.groupiesample.standard
+package com.hiromu.groupiesample.standard
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.hiring.groupiesample.ListItem
-import com.hiring.groupiesample.R
+import com.hiromu.groupiesample.ListItem
+import com.hiromu.groupiesample.R
 import kotlinx.android.synthetic.main.fragment_standard.view.*
 
 class StandardFragment : Fragment() {

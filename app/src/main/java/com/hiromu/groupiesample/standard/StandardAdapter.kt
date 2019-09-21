@@ -1,11 +1,11 @@
-package com.hiring.groupiesample.standard
+package com.hiromu.groupiesample.standard
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.hiring.groupiesample.ListItem
-import com.hiring.groupiesample.R
+import com.hiromu.groupiesample.ListItem
+import com.hiromu.groupiesample.R
 import kotlinx.android.synthetic.main.item.view.*
 
 class StandardAdapter : RecyclerView.Adapter<StandardAdapter.ViewHolder>() {

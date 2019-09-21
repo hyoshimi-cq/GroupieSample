@@ -1,4 +1,4 @@
-package com.hiring.groupiesample
+package com.hiromu.groupiesample
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

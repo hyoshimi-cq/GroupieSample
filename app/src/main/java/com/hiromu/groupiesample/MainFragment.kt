@@ -1,11 +1,11 @@
-package com.hiring.groupiesample
+package com.hiromu.groupiesample
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.hiring.groupiesample.standard.StandardFragment
+import com.hiromu.groupiesample.standard.StandardFragment
 import kotlinx.android.synthetic.main.fragment_main.view.*
 
 class MainFragment : Fragment() {
