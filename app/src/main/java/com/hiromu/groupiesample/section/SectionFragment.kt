@@ -36,12 +36,17 @@ class SectionFragment : Fragment() {
         view.recyclerView.addItemDecoration(DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL))
         view.recyclerView.adapter = adapter
 
-        val fruitSection = Section().also { it.setPlaceholder(LoadingItem()) }
+        // FruitとDrinkのSectionを生成
+        val fruitSection = Section()
         val drinkSection = Section()
+        // Placeholderをセット
+        fruitSection.setPlaceholder(LoadingItem())
 
+        // AdapterにSectionを追加
         val sections = listOf(fruitSection, drinkSection)
         adapter.addAll(sections)
 
+        // 2秒間Loadingを表示させた後にItemとHeader・Footerを追加する
         view.postDelayed({
             fruitSection.removePlaceholder()
             fruitSection.setHeader(HeaderItem("Fruit"))
