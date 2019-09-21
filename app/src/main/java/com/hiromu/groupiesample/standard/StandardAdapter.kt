@@ -4,13 +4,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.hiromu.groupiesample.ListItem
+import com.hiromu.groupiesample.Fruit
 import com.hiromu.groupiesample.R
 import kotlinx.android.synthetic.main.item.view.*
 
 class StandardAdapter : RecyclerView.Adapter<StandardAdapter.ViewHolder>() {
 
-    var items: List<ListItem> = emptyList()
+    var items: List<Fruit> = emptyList()
         set(value) {
             field = value
             notifyDataSetChanged()

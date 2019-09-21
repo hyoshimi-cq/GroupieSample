@@ -1,4 +1,4 @@
-package com.hiromu.groupiesample.standard
+package com.hiromu.groupiesample.groupie
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,21 +8,26 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.hiromu.groupiesample.Fruit
 import com.hiromu.groupiesample.R
-import kotlinx.android.synthetic.main.fragment_standard.view.*
+import com.xwray.groupie.GroupAdapter
+import com.xwray.groupie.kotlinandroidextensions.ViewHolder
+import kotlinx.android.synthetic.main.fragment_groupie.view.recyclerView
 
-class StandardFragment : Fragment() {
+class GroupieFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_standard, container, false)
+        return inflater.inflate(R.layout.fragment_groupie, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         view.recyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
-        view.recyclerView.adapter = StandardAdapter().also { it.items = Fruit.all() }
+        view.recyclerView.adapter = GroupAdapter<ViewHolder>().also {
+            val items = Fruit.all().map { ListItem(it) }
+            it.update(items)
+        }
     }
 }
