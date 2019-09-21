@@ -26,7 +26,7 @@ class GroupieFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         view.recyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
         view.recyclerView.adapter = GroupAdapter<ViewHolder>().also {
-            val items = Fruit.all().map { ListItem(it) }
+            val items = Fruit.all().map { FruitItem(it) }
             it.update(items)
         }
     }

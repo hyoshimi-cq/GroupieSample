@@ -10,7 +10,6 @@ class BindingItem(
 ) : BindableItem<BindItemBinding>() {
     override fun bind(viewBinding: BindItemBinding, position: Int) {
         viewBinding.title = fruit.title
-        viewBinding.root.setBackgroundResource(fruit.bgColor)
     }
 
     override fun getLayout(): Int = R.layout.bind_item

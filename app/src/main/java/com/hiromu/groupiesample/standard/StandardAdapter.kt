@@ -22,11 +22,7 @@ class StandardAdapter : RecyclerView.Adapter<StandardAdapter.ViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val item = items[position]
-        holder.itemView.title.let {
-            it.text = item.title
-            it.setBackgroundResource(item.bgColor)
-        }
+        holder.itemView.title.text = items[position].title
     }
 
     override fun getItemCount(): Int = items.size
